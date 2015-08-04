@@ -1,0 +1,17 @@
+[{
+  "id": 1,
+  "text": "function",
+  "state": "closed",
+  "iconCls":"icon-dept",
+  "children": [{
+	"id": 2,
+	"text": "juese",
+	"state": "open",
+	"iconCls":"icon-juese"
+  }]
+},{
+  "id": 3,
+  "text": "person",
+  "state": "open",
+  "iconCls":"icon-person"
+}]

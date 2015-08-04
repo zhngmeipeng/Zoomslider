@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<div>
+    <div style="background:url('../img/mapNav2.png') 0 0 no-repeat;width:50px;height: 50px;position: absolute;">
+            <div style="background:red;width: 10px;height: 7px;position: absolute;left: 20px;top: 5px"></div>
+            <div style="background:red;width: 10px;height: 7px;position: absolute;left: 3px;top: 20px"></div>
+            <div style="background:red;width: 10px;height: 7px;position: absolute;left: 38px;top: 20px"></div>
+            <div style="background:red;width: 10px;height: 7px;position: absolute;left: 20px;top: 37px"></div>
+        </div>
+    <div id="div7" style="background:url('../img/mapNav2.png') -20px -265px no-repeat;width:25px;height:25px;position: absolute;left: 20px;top:55px;"></div>
+    <div  style="background:url('../img/mapNav2.png')  -68px -190px no-repeat;width: 20px;height: 156px;position: absolute;left: 29px;top:75px;"></div>
+    <div id="div9" style="background:url('../img/mapNav2.png') -20px -290px no-repeat;width:25px;height:25px;position: absolute;left: 20px;top: 230px;"></div>
+    <div id="div10" style="background:url('../img/mapNav2.png') -48px -200px no-repeat;width: 20px;height: 160px;position: absolute;left: 20px;top:77px;"></div><!--border:1px solid #F00;-->
+    <div id="div11" style="background:blue;width:15px;height: 5px;position: absolute;left: 24px;top: 225px;"></div>
+</div>
+<script>
+   var div11=document.getElementById('div11');
+   var div10=document.getElementById('div10');
+   var div7=document.getElementById('div7');
+   var div9=document.getElementById('div9');
+    div11.onmousedown=function(event) {
+        var event = event || window.event;
+        disy = event.clientY - div11.offsetTop;
+        document.onmousemove = function (event) {
+            var event = event || window.event;
+            var distence = event.clientY - disy;
+            var mindis=div7.offsetTop;
+            var maxdis=div9.offsetTop;
+            if(distence==(mindis+20)||distence<(mindis+20)){
+                distence=mindis+20;
+            }
+            if(distence==(maxdis-5)||distence>(maxdis-5)){
+                distence=maxdis-5;
+            }
+            div11.style.top = distence + 'px';
+            div10.style.height=distence-80+'px';
+        }
+    }
+   div11.onmouseup = function ()
+    {
+        document.onmousemove = null;
+        document.onmouseup = null
+    };
+
+    div7.onclick=function(){
+        var top=div11.offsetTop;
+        var mimtop=div7.offsetTop;
+        var maxtop=div9.offsetTop;
+        var top1=top;
+        var mintop1=mimtop;
+        if(top1==(mintop1+25)||top1<(mintop1+25)){
+            top1=mintop1+25;
+        }
+        div11.style.top=top1-5+'px';
+        div10.style.height=top1-85+'px';
+    };
+
+   div9.onclick=function(){
+       var top=div11.offsetTop;
+       //var mimtop=div7.offsetTop;
+       var maxtop=div9.offsetTop;
+       var top1=top;
+      var mintop1=maxtop;
+      if(top1==(mintop1-10)||top1>(mintop1-10)){
+           top1=mintop1-10;
+       }
+       div11.style.top=top1+5+'px';
+       div10.style.height=top1-75+'px';
+   }
+</script>
+</body>
+</html>

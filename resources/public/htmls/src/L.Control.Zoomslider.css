@@ -1,0 +1,133 @@
+/** Slider **/
+.leaflet-control-zoomslider-wrap {																			/*!//加粗整体*/
+	/*padding-top: 5px;*/
+/*	padding-bottom: 5px;
+	border-bottom: 1px solid #ccc;*/
+}
+.leaflet-control-zoomslider-body {		/*!//树形条纹*/
+	position: absolute;
+	top: 100px;
+	left:30px;
+	width: 30px;
+	background: url('../../img/mapNav2.png') -69px -100px no-repeat;
+	margin: 0 auto;
+}
+.leaflet-control-zoomslider-grey {
+	position: relative;
+	top:-10px;
+	left: -13px;
+	width: 8px;
+	height: 150px;
+	background: url('../../img/mapNav2.png') -56px -100px no-repeat;
+	margin: 0 auto;
+	z-index: 100;
+}
+.leaflet-control-zoomslider-knob {																/*!//滑动小方块*/
+	position: relative;
+	width: 20px;
+	height: 11px;
+	background: url('../../img/mapNav2.png') -57px -76px no-repeat;
+	border-radius: 2px;
+	margin-left: -8px;
+	cursor: pointer;
+}
+
+.leaflet-control-zoomslider-yuan{
+	position: absolute;
+	top: -75px;
+	right: 2px;
+	background: url('../../img/mapNav2.png') 0px 0px no-repeat;
+	width: 50px;
+	height: 50px;
+}
+
+.leaflet-control-zoomslider-Leftyuan{
+	position: absolute;
+	left: 1px;
+	top:8px;
+	width: 16px;
+	height: 34px;
+  }
+
+.leaflet-control-zoomslider-Rightyuan{
+	position: absolute;
+	left: 32px;
+	top:7px;
+	width: 18px;
+	height: 34px;
+ }
+
+.leaflet-control-zoomslider-Topyuan{
+	position: absolute;
+	left: 9px;
+	top:-2px;
+	width: 32px;
+	height: 16px;
+	z-index: 100;
+ }
+
+.leaflet-control-zoomslider-Bottomyuan{
+	 position: absolute;
+	 left: 8px;
+	 top:32px;
+	 width: 34px;
+	 height: 16px;
+ }
+
+.leaflet-control-zoomslider-L{
+	position: absolute;
+	left: -7px;
+	top:-18px;
+	width: 20px;
+	height:20px ;
+	background: url('../../img/mapNav2.png') -1px -267px no-repeat;
+}
+
+.leaflet-control-zoomslider-S{
+	position: absolute;
+	left: -7px;
+	top:123px;
+	width: 20px;
+	height:20px ;
+	background: url('../../img/mapNav2.png') -1px -290px no-repeat;
+}
+
+.leaflet-control-zoomslider-jie{
+	position: absolute;
+	left:10px;
+	top: 8px;
+	width: 35px;
+	height: 18px;
+	background: url('../../img/mapNav2.png') -50px 0px no-repeat;
+	display:none;
+}
+
+.leaflet-control-zoomslider-shi{
+	position: absolute;
+	left: 10px;
+	top: 30px;
+	width: 35px;
+	height: 18px;
+	background: url('../../img/mapNav2.png') -50px -20px no-repeat;
+	display:none;
+}
+
+.leaflet-control-zoomslider-sheng{
+	position: absolute;
+	left:10px;
+	top: 60px;
+	width: 35px;
+	height: 18px;
+	background: url('../../img/mapNav2.png') -50px -37px no-repeat;
+	display: none;
+}
+
+.leaflet-control-zoomslider-guo{
+	position: absolute;
+	left: 10px;
+	top: 100px;
+	width: 35px;
+	height: 18px;
+	background: url('../../img/mapNav2.png') -50px -57px no-repeat;
+	display:none;
+}
